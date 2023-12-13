@@ -1,5 +1,5 @@
-alien_color='green'
-# alien_color='yellow'
+# alien_color='green'
+alien_color='yellow'
 # alien_color='red'
 
 if alien_color=='green':
