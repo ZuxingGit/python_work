@@ -242,3 +242,164 @@
 # txt = "banana"
 # x = txt.ljust(20, "+")
 # print(x)
+
+# lstrip()    Returns a left trim version of the string
+# txt = "     banana     "
+# x = txt.lstrip()
+# print("of all fruits", x, "is my favorite")
+
+# txt = ",,,,,ssaaww.....banana"
+# x = txt.lstrip(",.asw")
+# print(x)
+
+# makestrans()    Returns a translation table to be used in translations
+# txt = "Hello Sam!"
+# mytable = txt.maketrans("S", "P")
+# print(txt.translate(mytable))
+
+# txt = "Hi Sam!"
+# x = "mSa"
+# y = "eJo"
+# mytable = str.maketrans(x, y)
+# print(txt.translate(mytable))
+
+# partition()    Returns a tuple where the string is parted into three parts
+# txt = "I could eat bananas all day"
+# # x = txt.partition("bananas")
+# x = txt.partition("apples")
+# print(x)
+
+# rfind()    Searches the string for a specified value and returns the last position of where it was found
+# txt = "Mi casa, su casa."
+# x = txt.rfind("casa")
+# print(x)
+
+# txt = "Hello, welcome to my world."
+# # x = txt.rfind("e")
+# x = txt.rfind("e", 5, 10)
+# print(x)
+
+# txt = "Hello, welcome to my world."
+# print(txt.rfind("q"))
+# # print(txt.rindex("q"))
+
+# rindex()    Searches the string for a specified value and returns the last position of where it was found
+# txt = "Mi casa, su casa."
+# x = txt.rindex("casa")
+# print(x)
+
+# txt = "Hello, welcome to my world."
+# # x = txt.rindex("e")
+# x = txt.rindex("e", 5, 10)
+# print(x)
+
+# rjust()    Returns a right justified version of the string
+# txt = "banana"
+# # x = txt.rjust(20)
+# x = txt.rjust(20, "+")
+# print(x, "is my favorite fruit.")
+
+# rstrip()    Returns a right trim version of the string
+# txt = "     banana     "
+# x = txt.rstrip()
+# print("of all fruits", x, "is my favorite")
+
+# txt = "banana,,,,,ssqqqww....."
+# x = txt.rstrip(",.qsw")
+# print(x)
+
+# split()    Splits the string at the specified separator, and returns a list
+# txt = "welcome to the jungle"
+# x = txt.split()
+# print(x)
+
+# txt = "hello, my name is Peter, I am 26 years old"
+# x = txt.split(", ")
+# print(x)
+
+# txt = "apple#banana#cherry#orange"
+# x = txt.split("#")
+# print(x)
+
+# txt = "apple#banana#cherry#orange"
+# # setting the maxsplit parameter to 1, will return a list with 2 elements!
+# x = txt.split("#", 1)
+# print(x)
+
+# splitlines()    Splits the string at line breaks and returns a list
+# txt = "Thank you for the music\nWelcome to the jungle"
+# # x = txt.splitlines()
+# x = txt.splitlines(True)
+# print(x)
+
+# startswith()    Returns true if the string starts with the specified value
+# txt = "Hello, welcome to my world."
+# x = txt.startswith("wel", 7, 20)
+# print(x)
+
+# strip()    Returns a trimmed version of the string
+# txt = "     banana     "
+# x = txt.strip()
+# print("of all fruits", x, "is my favorite")
+
+# txt = ",,,,,rrttgg.....banana....rrr"
+# x = txt.strip(",.grt")
+# print(x)
+
+# swapcase()    Swaps cases, lower case becomes upper case and vice versa
+# txt = "Hello My Name Is PETER"
+# x = txt.swapcase()
+# print(x)
+
+# title()    Converts the first character of each word to upper case
+# txt = "Welcome to my world"
+# x = txt.title()
+# print(x)
+
+# txt = "Welcome to my 2nd world"
+# x = txt.title()
+# print(x)
+
+# txt = "hello b2b2b2 and 3g3g3g"
+# x = txt.title()
+# print(x)
+
+# translate()    Returns a translated string
+#use a dictionary with ascii codes to replace 83 (S) with 80 (P)
+# If you use a dictionary, you must use ascii codes instead of characters.
+# mydict = {83:  80} 
+# txt = "Hello Sam!"
+# print(txt.translate(mydict))
+
+# txt = "Hello Sam!"
+# mytable = str.maketrans("S", "P")
+# print(txt.translate(mytable))
+
+# txt = "Good night Sam!"
+# x = "mSa"
+# y = "eJo"
+# z = "odnght"
+# mytable = str.maketrans(x, y, z)
+# print(txt.translate(mytable))
+# # The same example as above, but using a dictionary instead of a mapping table
+# txt = "Good night Sam!"
+# mydict = {109: 101, 83: 74, 97: 111, 111: None, 100: None, 110: None, 103: None, 104: None, 116: None}
+# print(txt.translate(mydict))
+
+# upper()    Converts a string into upper case
+# txt = "Hello my friends"
+# x = txt.upper()
+# print(x)
+
+# zfill()    Fills the string with a specified number of 0 values at the beginning
+# txt = "50"
+# x = txt.zfill(10)
+# print(x)
+
+a = "hello"
+b = "welcome to the jungle"
+c = "10.000"
+
+print(a.zfill(10))
+print(b.zfill(10))
+print(c.zfill(10))
